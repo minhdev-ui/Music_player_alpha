@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <script src="https://kit.fontawesome.com/54f5e9521f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wraper">
+            <!-- Title Music -->
+            <div class="dashboard">
+                <div class="volume">
+                    <input type="range" min="0" max="100" value="100">
+                </div>
+                <header class="heading">
+                    <h5>Now playing</h5>
+                    <h4>Name song</h4>
+                </header>
+                <!-- CD background -->
+                <div class="cd">
+                    <div class="cd-img">
+                        <img src="./asset/img/download (2).jfif" alt="#" class="cdThumb">
+                    </div>
+                </div>
+
+                <!-- Button Icon -->
+                <div class="btn-icon">
+                    <div class="btn btn-repeat">
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                    <div class="btn btn-backward">
+                        <i class="fas fa-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle active" style="color:#D9024B; font-size: 40px;">
+                        <i class="fas fa-play-circle btn-play"></i>
+                        <i class="fas fa-pause-circle btn-pause"></i>
+                    </div>
+                    <div class="btn btn-forward">
+                        <i class="fas fa-forward"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+                </div>
+                <!-- Progress Playing -->
+                <div class="progress-playing">
+                    <p id="time-playing"></p>
+                    <input type="range" class="progress" step="1" value="0" min="0" max="100">
+                    <p id="duration-song"></p>
+                </div>
+            </div>
+                
+            <audio id="audio" src=""></audio>
+
+            <!-- List Music -->
+            <div class="list-music">
+                
+            </div>
+        </div>
+        <link rel="stylesheet" href="./asset/main.css">
+        <script src="./asset/main.js"></script>
+    </body>
+</html>
